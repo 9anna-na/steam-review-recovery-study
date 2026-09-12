@@ -24,13 +24,22 @@ That private file is excluded by `.gitignore` and must not be committed.
 
 ## Numerical verification
 
-From the repository root, run:
+Researchers with the private analytical CSV can first rebuild the aggregate reference tables through a separate pandas implementation. From the repository root, run:
+
+```bash
+python3 src/build_reference_tables.py \
+  --input stata/data/private/steam_reviews.csv \
+  --output-dir stata/output/tables \
+  --expected-sha256 00e56bb7d3060dd8b5fbbcfda9acb3900f3a6226f02feaa4f4676671324ae7db
+```
+
+The input is not published. It contains analytical variables but no review text or Steam identifiers, and the generator refuses common sensitive fields. Then run:
 
 ```bash
 python3 stata/check_stata_results.py
 ```
 
-The checker compares the formal licensed outputs with independent reference calculations. Directly comparable period cells, model contrasts, event stages, 60 stable-period placebo windows, and editing rates pass the recorded tolerances.
+The checker compares the formal licensed outputs with the independently computed references. Directly comparable period cells, model contrasts, event stages, 60 stable-period placebo windows, and editing rates pass the recorded tolerances. “Independent” here means a separate pandas implementation, not third-party validation of the private source data.
 
 ## Interpretation
 

@@ -42,6 +42,7 @@ Online ratings compress several judgments into one binary output. In this case, 
 - [`PROVENANCE.md`](PROVENANCE.md): collection record, input counts, file-integrity hashes, transformation steps, and public-release boundary.
 - [`evidence/`](evidence/): public-safe aggregate evidence for the timing, review-arrival, and text-audit findings.
 - [`src/analyze_intraday.py`](src/analyze_intraday.py): equal-duration event-window and review-arrival analysis.
+- [`src/build_reference_tables.py`](src/build_reference_tables.py): independent pandas implementation that rebuilds the five aggregate reference tables from the private, identifier-free analytical file.
 - [`stata/analysis.do`](stata/analysis.do): formal descriptive models, alternative comparison group, robustness checks, placebo windows, and figures.
 - [`stata/check_stata_results.py`](stata/check_stata_results.py): reconciliation of licensed Stata outputs against independent reference calculations.
 - [`stata/data/synthetic/`](stata/data/synthetic/): deterministic artificial data for public workflow testing.
@@ -56,13 +57,24 @@ From the `stata/` directory in Stata 16 or later:
 do analysis.do 1
 ```
 
-To check the committed formal aggregate tables against independently generated references:
+Researchers with the private, identifier-free analytical CSV can independently rebuild the five reference tables with pandas:
+
+```bash
+python3 src/build_reference_tables.py \
+  --input stata/data/private/steam_reviews.csv \
+  --output-dir stata/output/tables \
+  --expected-sha256 00e56bb7d3060dd8b5fbbcfda9acb3900f3a6226f02feaa4f4676671324ae7db
+```
+
+The generator rejects inputs containing common review-text, Steam-ID, username, or profile fields. It records only aggregate table hashes and the hash of the private analytical input in `stata/output/reference_generation_manifest.json`.
+
+To reconcile the licensed Stata tables against those independently computed references:
 
 ```bash
 python3 stata/check_stata_results.py
 ```
 
-The checker covers period cells, model contrasts, event stages, 60 stable-period placebo windows, and editing rates. Four focal placebo rows are not directly reconciled because the Stata and reference files use calendar-day and exact intraday cutoffs, respectively.
+The checker covers period cells, model contrasts, event stages, 60 stable-period placebo windows, and editing rates. Four focal placebo rows are not directly reconciled because the Stata and reference files use calendar-day and exact intraday cutoffs, respectively. Here, “independent” means a separate pandas implementation of the formulas rather than a second Stata program; it does not mean third-party replication or external authentication of the private data.
 
 ## Data availability and research integrity
 

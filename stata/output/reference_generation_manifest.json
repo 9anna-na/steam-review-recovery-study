@@ -1,0 +1,31 @@
+{
+  "claim_boundary": "Independent computational reconciliation, not third-party validation or causal identification",
+  "contains_review_text": false,
+  "contains_steam_or_profile_identifiers": false,
+  "input_description": "Private identifier-free Stata analytical CSV",
+  "input_rows": 38056,
+  "input_sha256": "00e56bb7d3060dd8b5fbbcfda9acb3900f3a6226f02feaa4f4676671324ae7db",
+  "reference_method": "Separate pandas implementation using explicit cell means and difference-in-gap formulas",
+  "tables": {
+    "reference_table_01_period_cells.csv": {
+      "rows": 36,
+      "sha256": "9518ab7e315e436452aee989465e72bfb13c40cad5710533a4c2f04a5baa7b58"
+    },
+    "reference_table_02_model_contrasts.csv": {
+      "rows": 18,
+      "sha256": "077b922a1bd10ddcb060bb4cd2d80635bc12f8983abfc8848d01d242b61501cd"
+    },
+    "reference_table_03_placebo_windows.csv": {
+      "rows": 64,
+      "sha256": "db99008c2dac5c6d89d086a5526275891976a841eb4aab4f9079f3033bd14674"
+    },
+    "reference_table_04_event_stage_gaps.csv": {
+      "rows": 5,
+      "sha256": "33e32e7499da8376cc78b1fac19e2d7b419cc0f2d88dea76d38f2eb61ec6c4f8"
+    },
+    "reference_table_05_editing_rates.csv": {
+      "rows": 9,
+      "sha256": "114e30dadfc39d0982f250ac165ebfa9362e438461e72294bcceb87c226845d8"
+    }
+  }
+}

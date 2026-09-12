@@ -29,7 +29,7 @@ All five raw files and all five associated pagination-state files were created a
 
 ## Integrity record
 
-The raw files remain private. Their SHA-256 digests are recorded so the researcher can verify that later analyses use the same local inputs.
+The raw files remain private. Their SHA-256 digests are a researcher-side integrity record: they allow the researcher to confirm that later analyses use the same local inputs. Because the private files are not distributed, an external reader cannot independently authenticate their contents from the hashes alone.
 
 | Private local artifact | SHA-256 |
 |---|---|
@@ -40,6 +40,14 @@ The raw files remain private. Their SHA-256 digests are recorded so the research
 | Japanese JSONL | `2dbaf0604b6e5806a5098c4d5116d44c0d95d4e604ca76dfdd9f1acd71dbc5b1` |
 | Processed review-level gzip CSV | `97a1bb3888281a608580b4d9f703b1654ea0326cdcf4001467842881f3ab7208` |
 | Private Stata analytical CSV | `00e56bb7d3060dd8b5fbbcfda9acb3900f3a6226f02feaa4f4676671324ae7db` |
+
+## Independent reference generation
+
+`src/build_reference_tables.py` is a separate pandas implementation of the study's period cells, language-by-period contrasts, placebo windows, event-stage gaps, and editing rates. It reads only the private analytical CSV described below and writes five aggregate reference tables. The public manifest records the input hash, row count, table row counts, and output hashes without exposing the input path or review-level data.
+
+The generator was run against the 38,056-row private analytical file identified by the SHA-256 digest above. All five regenerated reference CSVs were byte-for-byte identical to the committed reference tables. `stata/check_stata_results.py` then reconciled those references with the licensed Stata outputs within the documented tolerances.
+
+This is independent computational reconciliation because the reference tables are calculated with separate Python formulas rather than read from Stata output. It is not third-party replication, authentication of the undistributed source files, or evidence of causal identification.
 
 ## Transformation to the analytical file
 

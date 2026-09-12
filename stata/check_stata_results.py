@@ -1,4 +1,9 @@
-"""Reconcile formal Stata aggregate outputs with independent references."""
+"""Reconcile formal Stata aggregate outputs with separately computed references.
+
+The reference tables can be rebuilt from the private identifier-free analytical
+CSV by running src/build_reference_tables.py. This checker does not generate the
+references itself and does not authenticate undistributed source data.
+"""
 
 from __future__ import annotations
 

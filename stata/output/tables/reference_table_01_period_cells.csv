@@ -1,0 +1,37 @@
+specification,control,period,language,n_reviews,recommend_rate
+Never-edited primary,English,baseline,Simplified Chinese,1382,0.984081041968162
+Never-edited primary,English,baseline,English,4005,0.9902621722846442
+Never-edited primary,English,disputed,Simplified Chinese,1107,0.9214092140921409
+Never-edited primary,English,disputed,English,2282,0.99079754601227
+Never-edited primary,English,post,Simplified Chinese,2572,0.9883359253499222
+Never-edited primary,English,post,English,3716,0.9857373519913886
+Never-edited primary,Spanish,baseline,Simplified Chinese,1382,0.984081041968162
+Never-edited primary,Spanish,baseline,Spanish,487,0.9917864476386037
+Never-edited primary,Spanish,disputed,Simplified Chinese,1107,0.9214092140921409
+Never-edited primary,Spanish,disputed,Spanish,274,0.9963503649635036
+Never-edited primary,Spanish,post,Simplified Chinese,2572,0.9883359253499222
+Never-edited primary,Spanish,post,Spanish,512,0.9921875
+Period-end safeguard,English,baseline,Simplified Chinese,1395,0.9835125448028674
+Period-end safeguard,English,baseline,English,4061,0.9889189854715588
+Period-end safeguard,English,disputed,Simplified Chinese,1535,0.9400651465798046
+Period-end safeguard,English,disputed,English,2310,0.9904761904761905
+Period-end safeguard,English,post,Simplified Chinese,2615,0.9881453154875717
+Period-end safeguard,English,post,English,3776,0.9846398305084746
+Period-end safeguard,Spanish,baseline,Simplified Chinese,1395,0.9835125448028674
+Period-end safeguard,Spanish,baseline,Spanish,494,0.9919028340080972
+Period-end safeguard,Spanish,disputed,Simplified Chinese,1535,0.9400651465798046
+Period-end safeguard,Spanish,disputed,Spanish,275,0.9963636363636363
+Period-end safeguard,Spanish,post,Simplified Chinese,2615,0.9881453154875717
+Period-end safeguard,Spanish,post,Spanish,517,0.9922630560928434
+Final state naive,English,baseline,Simplified Chinese,1478,0.9837618403247632
+Final state naive,English,baseline,English,4207,0.9885904444972664
+Final state naive,English,disputed,Simplified Chinese,1919,0.9510161542470037
+Final state naive,English,disputed,English,2405,0.9904365904365905
+Final state naive,English,post,Simplified Chinese,2765,0.9880650994575045
+Final state naive,English,post,English,3948,0.9832826747720365
+Final state naive,Spanish,baseline,Simplified Chinese,1478,0.9837618403247632
+Final state naive,Spanish,baseline,Spanish,518,0.9903474903474904
+Final state naive,Spanish,disputed,Simplified Chinese,1919,0.9510161542470037
+Final state naive,Spanish,disputed,Spanish,294,0.9965986394557823
+Final state naive,Spanish,post,Simplified Chinese,2765,0.9880650994575045
+Final state naive,Spanish,post,Spanish,550,0.990909090909091

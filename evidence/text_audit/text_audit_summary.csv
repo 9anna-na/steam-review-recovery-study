@@ -1,0 +1,8 @@
+group,n,recommended_n,recommended_rate,localization_criticism_n,localization_criticism_rate,developer_positive_n,developer_positive_rate,rating_discussion_n,rating_discussion_rate,collective_rating_call_n,collective_rating_call_rate,recommended_and_localization_criticism_n,recommended_and_localization_criticism_rate,recommended_and_developer_positive_n,recommended_and_developer_positive_rate,recommended_criticism_and_developer_positive_n,recommended_criticism_and_developer_positive_rate
+all_40,40,28,0.7,28,0.7,19,0.475,13,0.325,0,0,16,0.4,19,0.475,11,0.275
+stage_a_before_public_response,10,2,0.2,10,1,0,0,2,0.2,0,0,2,0.2,0,0,0,0
+stage_b_forum_before_direct_message,10,6,0.6,8,0.8,1,0.1,2,0.2,0,0,4,0.4,1,0.1,1,0.1
+stage_c_direct_message_before_reversion,10,10,1,6,0.6,9,0.9,4,0.4,0,0,6,0.6,9,0.9,6,0.6
+stage_d_first_7d_after_reversion,10,10,1,4,0.4,9,0.9,5,0.5,0,0,4,0.4,9,0.9,4,0.4
+recommendation_positive,28,28,1,16,0.5714285714,19,0.6785714286,11,0.3928571429,0,0,16,0.5714285714,19,0.6785714286,11,0.3928571429
+recommendation_negative,12,0,0,12,1,0,0,2,0.1666666667,0,0,0,0,0,0,0,0

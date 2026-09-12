@@ -1,0 +1,3 @@
+outcome,after_vs_before_rate_ratio,ci_low,ci_high
+chinese_positive_reviews_per_hour,1.4502104638,1.1871789842,1.7715192210
+chinese_negative_reviews_per_hour,0.2760492514,0.1506596326,0.5057969934

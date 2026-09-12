@@ -1,0 +1,10 @@
+language,edit_period,n_reviews,n_edited,edit_rate
+English,Before,96,5,.052083332
+Simplified Chinese,Before,96,8,.083333336
+Spanish,Before,95,5,.052631579
+English,Disputed live,95,4,.042105265
+Simplified Chinese,Disputed live,95,37,.38947368
+Spanish,Disputed live,96,6,.0625
+English,After reversion,96,5,.052083332
+Simplified Chinese,After reversion,96,9,.09375
+Spanish,After reversion,96,6,.0625

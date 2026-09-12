@@ -1,0 +1,10 @@
+period,language,n_reviews,n_eventually_edited,edit_rate
+Before,English,2169,104,0.0479483633010604
+Before,Simplified Chinese,731,46,0.06292749658002736
+Before,Spanish,256,14,0.0546875
+Disputed live,English,2405,123,0.051143451143451146
+Disputed live,Simplified Chinese,1919,812,0.42313705054716
+Disputed live,Spanish,294,20,0.06802721088435375
+After reversion,English,2347,142,0.060502769492969746
+After reversion,Simplified Chinese,1938,147,0.07585139318885449
+After reversion,Spanish,343,23,0.06705539358600583

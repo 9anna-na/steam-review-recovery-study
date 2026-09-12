@@ -1,0 +1,11 @@
+specification,control,contrast,estimate,se,ci_low,ci_high,p_value,n_obs
+Never-edited primary,English,Damage vs baseline,-.0519414257676899,.048403926,-.14696054,.043077689,.28356966,777
+Never-edited primary,English,Recovery vs disputed,.0705288246236522,.047971036,-.023640506,.16469815,.14190534,777
+Never-edited primary,English,Post vs baseline,.0185873988559623,.034648463,-.049429115,.08660391,.59179771,777
+Never-edited primary,Spanish,Damage vs baseline,-.0278853979380766,.048916493,-.12391149,.068140693,.56880307,773
+Never-edited primary,Spanish,Recovery vs disputed,.0537568271589796,.048988335,-.042410295,.14992395,.27283746,773
+Never-edited primary,Spanish,Post vs baseline,.025871429220903,.033225,-.039351296,.091094159,.43641219,773
+Final state naive,English,Damage vs baseline,-.162468671679198,.050950333,-.2624709,-.062466454,.0014807555,862
+Final state naive,English,Recovery vs disputed,.1862781954887219,.05030432,.087543935,.28501245,.00022669278,862
+Period-end safeguard,English,Damage vs baseline,-.1304471293250456,.051173739,-.23089088,-.030003374,.010977201,844
+Period-end safeguard,English,Recovery vs disputed,.1541866554363351,.050476737,.055110972,.25326234,.0023248808,844

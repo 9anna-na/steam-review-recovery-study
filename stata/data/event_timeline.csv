@@ -1,0 +1,6 @@
+stage,event_label,start_utc,end_exclusive_utc
+0,Fourteen-day baseline,2024-04-04 20:08:40,2024-04-18 20:08:40
+1,Patch 1.6.4 disputed localization live,2024-04-18 20:08:40,2024-04-21 22:39:53
+2,Forum commitment before direct message,2024-04-21 22:39:53,2024-04-23 01:54:50
+3,Direct message before live reversion,2024-04-23 01:54:50,2024-04-26 19:39:05
+4,First seven days after live reversion,2024-04-26 19:39:05,2024-05-03 19:39:05

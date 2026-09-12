@@ -1,0 +1,9 @@
+stage,outcome,cn_count,en_review_exposure,cn_reviews_per_100_en_reviews,ci_low,ci_high
+harmful_before_public_commitment,positive,350,1120,31.25,28.1417142753,34.7015995701
+harmful_before_public_commitment,negative,45,1120,4.0178571429,2.9998706240,5.3812907434
+forum_commitment_before_direct_message,positive,116,282,41.1347517730,34.2906209381,49.3449158148
+forum_commitment_before_direct_message,negative,22,282,7.8014184397,5.1368094869,11.8482357242
+direct_message_before_live_reversion,positive,554,880,62.9545454545,57.9245061548,68.4213825284
+direct_message_before_live_reversion,negative,20,880,2.2727272727,1.4662545564,3.5227779745
+first_7d_after_live_reversion,positive,1576,1941,81.1952601752,77.2838638331,85.3046153224
+first_7d_after_live_reversion,negative,16,1941,0.8243173622,0.5049985733,1.3455466007

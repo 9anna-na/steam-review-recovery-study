@@ -1,0 +1,5 @@
+language,n_reviews,recommend_rate,edit_rate,median_playtime_hours,mean_playtime_hours
+English,23372,.98977411,.051300701,62.558334,155.19769
+Simplified Chinese,11384,.98111385,.12631764,60.591667,122.5688
+Spanish,3245,.99322033,.069953777,50.549999,95.8078
+Japanese,55,.96363634,.2,80.966667,141.8494

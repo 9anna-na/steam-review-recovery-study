@@ -1,0 +1,28 @@
+.DS_Store
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Private Steam data and identifiers
+data/raw/
+data/processed/
+stata/data/private/
+*.jsonl
+*.csv.gz
+*.dta
+*.gph
+
+# Personal and application documents
+private/
+application-private/
+secrets/
+*.doc
+*.docx
+*.pdf
+*transcript*
+*recommendation*
+*passport*
+*toeic*

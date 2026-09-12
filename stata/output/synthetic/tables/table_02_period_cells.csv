@@ -1,0 +1,7 @@
+language,period,n_reviews,recommend_rate
+English,14-day baseline,159,.94968551
+Simplified Chinese,14-day baseline,155,.94838709
+English,Disputed localization live,91,.96703297
+Simplified Chinese,Disputed localization live,58,.91379309
+English,14 days after reversion,160,.94375002
+Simplified Chinese,14 days after reversion,154,.96103895
